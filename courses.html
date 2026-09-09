@@ -30,28 +30,51 @@
   </header>
 
   <main>
+    <section class="page-hero">
+      <div class="container">
+        <ol class="breadcrumb" role="list">
+          <li><a href="index.html">Home</a></li>
+          <li>Courses</li>
+        </ol>
+        <p class="page-hero__en">Courses</p>
+        <h1>コース案内</h1>
+        <p class="page-hero__lead">TODO: コース全体の説明文を記載</p>
+      </div>
+    </section>
+
     <section class="section">
       <div class="container">
-        <h1 class="section-title">コース案内</h1>
         <div class="card-grid">
           <div class="card">
-            <img src="images/courses/placeholder.jpg" alt="コース画像プレースホルダー" />
+            <img src="images/courses/placeholder-01.svg" alt="" />
             <div class="card-body">
-              <h3>TODO: コース名（例：マインクラフト・プログラミングコース）</h3>
+              <div class="tag-list">
+                <span class="tag">TODO: 対象学年</span>
+                <span class="tag">TODO: 授業形態</span>
+              </div>
+              <h3>TODO: コース名（例：はじめてのマイクラプログラミング）</h3>
               <p>TODO: 対象年齢・学習内容・レベル感を記載</p>
             </div>
           </div>
           <div class="card">
-            <img src="images/courses/placeholder.jpg" alt="コース画像プレースホルダー" />
+            <img src="images/courses/placeholder-02.svg" alt="" />
             <div class="card-body">
-              <h3>TODO: コース名</h3>
+              <div class="tag-list">
+                <span class="tag">TODO: 対象学年</span>
+                <span class="tag">TODO: 授業形態</span>
+              </div>
+              <h3>TODO: コース名（例：ステップアップコース）</h3>
               <p>TODO: 対象年齢・学習内容・レベル感を記載</p>
             </div>
           </div>
           <div class="card">
-            <img src="images/courses/placeholder.jpg" alt="コース画像プレースホルダー" />
+            <img src="images/courses/placeholder-01.svg" alt="" />
             <div class="card-body">
-              <h3>TODO: コース名</h3>
+              <div class="tag-list">
+                <span class="tag">TODO: 対象学年</span>
+                <span class="tag">TODO: 授業形態</span>
+              </div>
+              <h3>TODO: コース名（例：応用・作品制作コース）</h3>
               <p>TODO: 対象年齢・学習内容・レベル感を記載</p>
             </div>
           </div>
@@ -61,25 +84,99 @@
 
     <section class="section section--alt">
       <div class="container">
-        <h2 class="section-title">指導の流れ</h2>
-        <p style="max-width:720px;margin-inline:auto;">TODO: 授業の流れ・復習テスト・指導報告書などの仕組みを記載</p>
+        <div class="section-head">
+          <p class="section-head__en">Flow</p>
+          <h2 class="section-head__ja">指導の流れ</h2>
+          <p class="section-head__lead">TODO: 1回の授業の進み方を説明する導入文</p>
+        </div>
+        <ol class="step-list" role="list">
+          <li class="step-item">
+            <p class="step-item__num">01</p>
+            <div>
+              <h3>TODO: 導入・前回の復習</h3>
+              <p>TODO: 授業冒頭の流れを記載</p>
+            </div>
+          </li>
+          <li class="step-item">
+            <p class="step-item__num">02</p>
+            <div>
+              <h3>TODO: ミッションに挑戦</h3>
+              <p>TODO: マインクラフト上での課題の進め方を記載</p>
+            </div>
+          </li>
+          <li class="step-item">
+            <p class="step-item__num">03</p>
+            <div>
+              <h3>TODO: 復習テスト</h3>
+              <p>TODO: ペーパーテストによる理解度チェックと再指導の仕組みを記載</p>
+            </div>
+          </li>
+          <li class="step-item">
+            <p class="step-item__num">04</p>
+            <div>
+              <h3>TODO: 指導報告書の提出</h3>
+              <p>TODO: 保護者への進捗共有の仕組みを記載（対象校舎も明記）</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-head__en">Level</p>
+          <h2 class="section-head__ja">レベルの目安</h2>
+        </div>
+        <div class="table-wrap" style="max-width:880px;margin-inline:auto;">
+          <table class="data-table">
+            <thead>
+              <tr><th>レベル</th><th>対象</th><th>身につく力</th><th>期間の目安</th></tr>
+            </thead>
+            <tbody>
+              <tr><th>入門</th><td>TODO</td><td>TODO</td><td>TODO</td></tr>
+              <tr><th>基礎</th><td>TODO</td><td>TODO</td><td>TODO</td></tr>
+              <tr><th>応用</th><td>TODO</td><td>TODO</td><td>TODO</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="table-hint">← 横にスクロールできます</p>
+        <div class="note">
+          <strong>ご注意</strong>
+          TODO: 使用するマインクラフトのエディション（教育版／Java版など）や、PCの貸出有無などの補足を記載
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container">
+        <h2>まずは無料体験へ</h2>
+        <p class="cta__lead">TODO: 体験授業の案内文（所要時間・持ち物・当日の流れなど）</p>
+        <div class="cta__actions">
+          <a href="contact.html" class="button">無料体験のお申し込み</a>
+          <a href="faq.html" class="button button--outline">よくある質問を見る</a>
+        </div>
       </div>
     </section>
   </main>
+
   <footer class="site-footer">
     <div class="container">
       <nav aria-label="フッターナビゲーション">
         <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="courses.html">Courses</a>
-      <a href="locations.html">Location</a>
-      <a href="tuition.html">Tuition & Timetable</a>
-      <a href="faq.html">FAQ</a>
-      <a href="news.html">News</a>
-      <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+        <a href="courses.html">Courses</a>
+        <a href="locations.html">Location</a>
+        <a href="tuition.html">Tuition & Timetable</a>
+        <a href="faq.html">FAQ</a>
+        <a href="news.html">News</a>
+        <a href="contact.html">Contact</a>
       </nav>
       <small>&copy; 2026 アースラボ. All Rights Reserved. / <a href="#">プライバシーポリシー</a></small>
-      <!-- TODO: Mojang社・Microsoft社とは無関係である旨の免責事項を記載（現行aslabpro.comを踏襲） -->
+      <small class="disclaimer">
+        <!-- TODO: 正式な文面を現行aslabpro.comに合わせて確定する -->
+        当スクールは Mojang Studios / Microsoft 社とは一切関係がありません。
+      </small>
     </div>
   </footer>
 

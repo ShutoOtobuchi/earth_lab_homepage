@@ -30,45 +30,141 @@
   </header>
 
   <main>
+    <section class="page-hero">
+      <div class="container">
+        <ol class="breadcrumb" role="list">
+          <li><a href="index.html">Home</a></li>
+          <li>About</li>
+        </ol>
+        <p class="page-hero__en">About</p>
+        <h1>スクール紹介</h1>
+        <p class="page-hero__lead">TODO: スクール紹介ページのリード文を記載</p>
+      </div>
+    </section>
+
     <section class="section">
       <div class="container">
-        <h1 class="section-title">スクール紹介</h1>
-        <p style="max-width:720px;margin-inline:auto;">
-          TODO: 開設背景を記載（現行aslabpro.comより：理科大生がプログラミング学習で苦労した経験をもとに教室を開設、等）
-        </p>
+        <div class="media-row">
+          <div class="media-row__figure">
+            <!-- TODO: 教室・授業風景の写真に差し替える -->
+            <img src="images/about/school-placeholder.svg" alt="" />
+          </div>
+          <div>
+            <h3>TODO: 開設の背景を一言で（見出し）</h3>
+            <p>TODO: 開設背景を記載（現行aslabpro.comより：理科大生がプログラミング学習で苦労した経験をもとに教室を開設、等）</p>
+            <p>TODO: 補足の段落。どんな子どもに来てほしいか、何を大切にしているかを記載</p>
+          </div>
+        </div>
       </div>
     </section>
 
     <section class="section section--alt">
       <div class="container">
-        <h2 class="section-title">教育理念</h2>
-        <p style="max-width:720px;margin-inline:auto;text-align:center;color:var(--color-text-light);">
-          TODO: 理念のメッセージ・キーワードを記載
+        <div class="section-head">
+          <p class="section-head__en">Philosophy</p>
+          <h2 class="section-head__ja">教育理念</h2>
+        </div>
+        <p class="policy-message">
+          TODO: 理念のメッセージを記載<br />
+          （例：「学ぶ」ことが「好き」になれば、何にでもなれる）
         </p>
+        <div class="policy-grid">
+          <div class="policy-item">
+            <p class="policy-item__label">Growth</p>
+            <h3>向上</h3>
+            <p>TODO: 「向上」に込めた意味を記載（アースラボ独自の価値観に置き換える）</p>
+          </div>
+          <div class="policy-item">
+            <p class="policy-item__label">Inquiry</p>
+            <h3>探求</h3>
+            <p>TODO: 「探求」に込めた意味を記載</p>
+          </div>
+          <div class="policy-item">
+            <p class="policy-item__label">Trust</p>
+            <h3>信頼</h3>
+            <p>TODO: 「信頼」に込めた意味を記載</p>
+          </div>
+          <div class="policy-item">
+            <p class="policy-item__label">Hope</p>
+            <h3>希望</h3>
+            <p>TODO: 「希望」に込めた意味を記載</p>
+          </div>
+        </div>
       </div>
     </section>
 
     <section class="section">
       <div class="container">
-        <h2 class="section-title">代表メッセージ</h2>
-        <p style="max-width:720px;margin-inline:auto;">TODO: 代表者からのメッセージ・プロフィール</p>
+        <div class="section-head">
+          <p class="section-head__en">Message</p>
+          <h2 class="section-head__ja">代表メッセージ</h2>
+        </div>
+        <div class="profile-card">
+          <div>
+            <!-- TODO: 代表者の顔写真に差し替える -->
+            <img src="images/about/person-placeholder.svg" alt="" />
+          </div>
+          <div>
+            <p class="profile-card__role">TODO: 肩書き（例：代表／教室長）</p>
+            <p class="profile-card__name">TODO: 氏名</p>
+            <p>TODO: 代表者からのメッセージ本文</p>
+            <p style="margin-top:1.2em;">TODO: 経歴・プロフィール</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-head__en">Overview</p>
+          <h2 class="section-head__ja">スクール概要</h2>
+        </div>
+        <div class="table-wrap" style="max-width:820px;margin-inline:auto;">
+          <table class="data-table">
+            <tbody>
+              <tr><th>名称</th><td>TODO: 正式名称</td></tr>
+              <tr><th>運営</th><td>TODO: 運営会社・団体名</td></tr>
+              <tr><th>所在地</th><td>TODO: 本部所在地</td></tr>
+              <tr><th>開設</th><td>TODO: 開設年月</td></tr>
+              <tr><th>対象</th><td>TODO: 対象学年（例：小学◯年生〜中学生）</td></tr>
+              <tr><th>連絡先</th><td>TODO: 電話番号／メールアドレス</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="table-hint">← 横にスクロールできます</p>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container">
+        <h2>まずは無料体験へ</h2>
+        <p class="cta__lead">TODO: 体験授業の案内文（所要時間・持ち物・当日の流れなど）</p>
+        <div class="cta__actions">
+          <a href="contact.html" class="button">無料体験のお申し込み</a>
+          <a href="faq.html" class="button button--outline">よくある質問を見る</a>
+        </div>
       </div>
     </section>
   </main>
+
   <footer class="site-footer">
     <div class="container">
       <nav aria-label="フッターナビゲーション">
         <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="courses.html">Courses</a>
-      <a href="locations.html">Location</a>
-      <a href="tuition.html">Tuition & Timetable</a>
-      <a href="faq.html">FAQ</a>
-      <a href="news.html">News</a>
-      <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+        <a href="courses.html">Courses</a>
+        <a href="locations.html">Location</a>
+        <a href="tuition.html">Tuition & Timetable</a>
+        <a href="faq.html">FAQ</a>
+        <a href="news.html">News</a>
+        <a href="contact.html">Contact</a>
       </nav>
       <small>&copy; 2026 アースラボ. All Rights Reserved. / <a href="#">プライバシーポリシー</a></small>
-      <!-- TODO: Mojang社・Microsoft社とは無関係である旨の免責事項を記載（現行aslabpro.comを踏襲） -->
+      <small class="disclaimer">
+        <!-- TODO: 正式な文面を現行aslabpro.comに合わせて確定する -->
+        当スクールは Mojang Studios / Microsoft 社とは一切関係がありません。
+      </small>
     </div>
   </footer>
 

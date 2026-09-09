@@ -30,36 +30,96 @@
   </header>
 
   <main>
+    <section class="page-hero">
+      <div class="container">
+        <ol class="breadcrumb" role="list">
+          <li><a href="index.html">Home</a></li>
+          <li>News</li>
+        </ol>
+        <p class="page-hero__en">News</p>
+        <h1>お知らせ</h1>
+        <p class="page-hero__lead">TODO: お知らせページのリード文を記載</p>
+      </div>
+    </section>
+
     <section class="section">
       <div class="container">
-        <h1 class="section-title">お知らせ</h1>
-        <ul role="list" style="max-width:720px;margin-inline:auto;">
-          <li style="padding:16px 0;border-bottom:1px solid var(--color-border);">
-            <time datetime="2026-01-01" style="color:var(--color-text-light);font-size:0.85rem;">2026.01.01</time>
-            <p>TODO: お知らせタイトル・本文</p>
+        <ul class="news-list" role="list">
+          <li class="news-item">
+            <a href="#">
+              <time datetime="2026-01-01">2026.01.01</time>
+              <span class="tag">お知らせ</span>
+              <span class="news-title">TODO: お知らせのタイトル</span>
+            </a>
           </li>
-          <li style="padding:16px 0;border-bottom:1px solid var(--color-border);">
-            <time datetime="2026-01-01" style="color:var(--color-text-light);font-size:0.85rem;">2026.01.01</time>
-            <p>TODO: お知らせタイトル・本文</p>
+          <li class="news-item">
+            <a href="#">
+              <time datetime="2026-01-01">2026.01.01</time>
+              <span class="tag">イベント</span>
+              <span class="news-title">TODO: お知らせのタイトル</span>
+            </a>
+          </li>
+          <li class="news-item">
+            <a href="#">
+              <time datetime="2026-01-01">2026.01.01</time>
+              <span class="tag">教室</span>
+              <span class="news-title">TODO: お知らせのタイトル</span>
+            </a>
+          </li>
+          <li class="news-item">
+            <a href="#">
+              <time datetime="2026-01-01">2026.01.01</time>
+              <span class="tag">お知らせ</span>
+              <span class="news-title">TODO: お知らせのタイトル</span>
+            </a>
+          </li>
+          <li class="news-item">
+            <a href="#">
+              <time datetime="2026-01-01">2026.01.01</time>
+              <span class="tag">教室</span>
+              <span class="news-title">TODO: お知らせのタイトル</span>
+            </a>
           </li>
         </ul>
+        <!-- TODO: 記事が増えたらページ送りを実装する -->
+        <nav class="pagination" aria-label="ページ送り">
+          <span class="is-current">1</span>
+          <a href="#">2</a>
+          <a href="#">3</a>
+          <a href="#">次へ</a>
+        </nav>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container">
+        <h2>まずは無料体験へ</h2>
+        <p class="cta__lead">TODO: 体験授業の案内文（所要時間・持ち物・当日の流れなど）</p>
+        <div class="cta__actions">
+          <a href="contact.html" class="button">無料体験のお申し込み</a>
+          <a href="faq.html" class="button button--outline">よくある質問を見る</a>
+        </div>
       </div>
     </section>
   </main>
+
   <footer class="site-footer">
     <div class="container">
       <nav aria-label="フッターナビゲーション">
         <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="courses.html">Courses</a>
-      <a href="locations.html">Location</a>
-      <a href="tuition.html">Tuition & Timetable</a>
-      <a href="faq.html">FAQ</a>
-      <a href="news.html">News</a>
-      <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+        <a href="courses.html">Courses</a>
+        <a href="locations.html">Location</a>
+        <a href="tuition.html">Tuition & Timetable</a>
+        <a href="faq.html">FAQ</a>
+        <a href="news.html">News</a>
+        <a href="contact.html">Contact</a>
       </nav>
       <small>&copy; 2026 アースラボ. All Rights Reserved. / <a href="#">プライバシーポリシー</a></small>
-      <!-- TODO: Mojang社・Microsoft社とは無関係である旨の免責事項を記載（現行aslabpro.comを踏襲） -->
+      <small class="disclaimer">
+        <!-- TODO: 正式な文面を現行aslabpro.comに合わせて確定する -->
+        当スクールは Mojang Studios / Microsoft 社とは一切関係がありません。
+      </small>
     </div>
   </footer>
 

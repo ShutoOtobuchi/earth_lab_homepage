@@ -30,43 +30,101 @@
   </header>
 
   <main>
+    <section class="page-hero">
+      <div class="container">
+        <ol class="breadcrumb" role="list">
+          <li><a href="index.html">Home</a></li>
+          <li>Location</li>
+        </ol>
+        <p class="page-hero__en">Location</p>
+        <h1>教室案内</h1>
+        <p class="page-hero__lead">TODO: 教室展開の概要を記載</p>
+      </div>
+    </section>
+
     <section class="section">
       <div class="container">
-        <h1 class="section-title">教室案内</h1>
-        <div class="card-grid">
-          <div class="card">
-            <div class="card-body">
-              <h3>TODO: 校舎名（例：金町校）</h3>
-              <p>TODO: 住所</p>
-              <p>TODO: 最寄り駅</p>
+        <article class="location-detail">
+          <div class="location-detail__top">
+            <!-- TODO: 教室の写真に差し替える -->
+            <img src="images/locations/classroom-placeholder.svg" alt="" />
+            <div class="location-detail__body">
+              <h2>TODO: 教室名（例：金町校）</h2>
+              <dl class="info-list">
+                <dt>住所</dt><dd>TODO: 住所</dd>
+                <dt>アクセス</dt><dd>TODO: 最寄り駅・徒歩◯分</dd>
+                <dt>開講曜日</dt><dd>TODO: 開講曜日・時間帯</dd>
+                <dt>電話</dt><dd>TODO: 000-0000-0000</dd>
+              </dl>
+              <p style="margin-top:20px;">
+                <a href="contact.html" class="link-more">この教室の体験を申し込む →</a>
+              </p>
             </div>
           </div>
-          <div class="card">
-            <div class="card-body">
-              <h3>TODO: 校舎名</h3>
-              <p>TODO: 住所</p>
-              <p>TODO: 最寄り駅</p>
+          <figure class="map-embed">
+            <!-- TODO: Googleマップの埋め込み（iframe）に差し替える -->
+            <img src="images/locations/map-placeholder.svg" alt="" />
+          </figure>
+        </article>
+
+        <article class="location-detail">
+          <div class="location-detail__top">
+            <!-- TODO: 教室の写真に差し替える -->
+            <img src="images/locations/classroom-placeholder.svg" alt="" />
+            <div class="location-detail__body">
+              <h2>TODO: 教室名</h2>
+              <dl class="info-list">
+                <dt>住所</dt><dd>TODO: 住所</dd>
+                <dt>アクセス</dt><dd>TODO: 最寄り駅・徒歩◯分</dd>
+                <dt>開講曜日</dt><dd>TODO: 開講曜日・時間帯</dd>
+                <dt>電話</dt><dd>TODO: 000-0000-0000</dd>
+              </dl>
+              <p style="margin-top:20px;">
+                <a href="contact.html" class="link-more">この教室の体験を申し込む →</a>
+              </p>
             </div>
           </div>
+          <figure class="map-embed">
+            <!-- TODO: Googleマップの埋め込み（iframe）に差し替える -->
+            <img src="images/locations/map-placeholder.svg" alt="" />
+          </figure>
+        </article>
+        <div class="note">
+          <strong>教室数について</strong>
+          現行1教室のみの場合はカードを1つに調整してください。今後多店舗展開する場合は earth-academy.jp のように一覧を拡張できます。
         </div>
-        <p style="margin-top:24px;color:var(--color-text-light);">※現行1教室のみの場合はカードを1つに調整。今後多店舗展開する場合はearth-academy.jpのように一覧を拡張。</p>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container">
+        <h2>まずは無料体験へ</h2>
+        <p class="cta__lead">TODO: 体験授業の案内文（所要時間・持ち物・当日の流れなど）</p>
+        <div class="cta__actions">
+          <a href="contact.html" class="button">無料体験のお申し込み</a>
+          <a href="faq.html" class="button button--outline">よくある質問を見る</a>
+        </div>
       </div>
     </section>
   </main>
+
   <footer class="site-footer">
     <div class="container">
       <nav aria-label="フッターナビゲーション">
         <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="courses.html">Courses</a>
-      <a href="locations.html">Location</a>
-      <a href="tuition.html">Tuition & Timetable</a>
-      <a href="faq.html">FAQ</a>
-      <a href="news.html">News</a>
-      <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+        <a href="courses.html">Courses</a>
+        <a href="locations.html">Location</a>
+        <a href="tuition.html">Tuition & Timetable</a>
+        <a href="faq.html">FAQ</a>
+        <a href="news.html">News</a>
+        <a href="contact.html">Contact</a>
       </nav>
       <small>&copy; 2026 アースラボ. All Rights Reserved. / <a href="#">プライバシーポリシー</a></small>
-      <!-- TODO: Mojang社・Microsoft社とは無関係である旨の免責事項を記載（現行aslabpro.comを踏襲） -->
+      <small class="disclaimer">
+        <!-- TODO: 正式な文面を現行aslabpro.comに合わせて確定する -->
+        当スクールは Mojang Studios / Microsoft 社とは一切関係がありません。
+      </small>
     </div>
   </footer>
 

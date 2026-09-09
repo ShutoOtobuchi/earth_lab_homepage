@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 240" role="img" aria-label="地図のプレースホルダー">
+  <rect width="1280" height="240" fill="#e9eeeb"/>
+  <g fill="#ffffff">
+    <rect x="70" y="0" width="12" height="240"/><rect x="230" y="0" width="12" height="240"/>
+    <rect x="390" y="0" width="12" height="240"/><rect x="550" y="0" width="12" height="240"/>
+    <rect x="710" y="0" width="12" height="240"/><rect x="870" y="0" width="12" height="240"/>
+    <rect x="1030" y="0" width="12" height="240"/><rect x="1190" y="0" width="12" height="240"/>
+    <rect x="0" y="52" width="1280" height="12"/><rect x="0" y="172" width="1280" height="12"/>
+  </g>
+  <rect x="562" y="64" width="148" height="108" fill="#d5e6dc"/>
+  <g transform="translate(636 118)">
+    <path d="M0 30 C-16 9 -23 0 -23 -11 A23 23 0 0 1 23 -11 C23 0 16 9 0 30 Z" fill="#1e8f5e"/>
+    <circle cx="0" cy="-11" r="8" fill="#ffffff"/>
+  </g>
+  <text x="1130" y="215" text-anchor="middle" font-family="sans-serif" font-size="15" letter-spacing="2" fill="#6b8b7b">MAP</text>
+</svg>

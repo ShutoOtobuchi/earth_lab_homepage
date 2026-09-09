@@ -30,43 +30,86 @@
   </header>
 
   <main>
+    <section class="page-hero">
+      <div class="container">
+        <ol class="breadcrumb" role="list">
+          <li><a href="index.html">Home</a></li>
+          <li>Contact</li>
+        </ol>
+        <p class="page-hero__en">Contact</p>
+        <h1>お問い合わせ</h1>
+        <p class="page-hero__lead">TODO: 問い合わせページのリード文を記載</p>
+      </div>
+    </section>
+
     <section class="section">
       <div class="container">
-        <h1 class="section-title">お問い合わせ</h1>
-        <p style="text-align:center;margin-bottom:32px;">TODO: 電話番号・受付時間を記載（例：TEL：000-0000-0000）</p>
-        <form style="max-width:560px;margin-inline:auto;display:grid;gap:16px;" onsubmit="return false;">
-          <label>
-            お名前
-            <input type="text" name="name" required style="width:100%;padding:12px;border:1px solid var(--color-border);border-radius:8px;margin-top:4px;" />
+        <div class="contact-tel">
+          <p class="contact-tel__label">お電話でのお問い合わせ</p>
+          <p class="contact-tel__num">TODO: 000-0000-0000</p>
+          <p class="contact-tel__label">TODO: 受付時間（例：平日 10:00〜19:00）</p>
+        </div>
+
+        <form class="form" onsubmit="return false;">
+          <div class="form-field">
+            <label class="form-label" for="name">お名前<span class="badge-required">必須</span></label>
+            <input type="text" id="name" name="name" autocomplete="name" required />
+          </div>
+          <div class="form-field">
+            <label class="form-label" for="email">メールアドレス<span class="badge-required">必須</span></label>
+            <input type="email" id="email" name="email" autocomplete="email" required />
+          </div>
+          <div class="form-field">
+            <label class="form-label" for="tel">電話番号<span class="badge-optional">任意</span></label>
+            <input type="tel" id="tel" name="tel" autocomplete="tel" />
+          </div>
+          <div class="form-field">
+            <label class="form-label" for="topic">お問い合わせ種別<span class="badge-required">必須</span></label>
+            <select id="topic" name="topic" required>
+              <option value="">選択してください</option>
+              <option>無料体験の申し込み</option>
+              <option>コース・料金について</option>
+              <option>教室・アクセスについて</option>
+              <option>その他</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label class="form-label" for="message">お問い合わせ内容<span class="badge-required">必須</span></label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+          </div>
+          <label class="form-consent">
+            <input type="checkbox" name="consent" required />
+            <span><a href="#" class="link-inline">プライバシーポリシー</a>に同意します</span>
           </label>
-          <label>
-            メールアドレス
-            <input type="email" name="email" required style="width:100%;padding:12px;border:1px solid var(--color-border);border-radius:8px;margin-top:4px;" />
-          </label>
-          <label>
-            お問い合わせ内容
-            <textarea name="message" rows="5" required style="width:100%;padding:12px;border:1px solid var(--color-border);border-radius:8px;margin-top:4px;"></textarea>
-          </label>
-          <button type="submit" class="button">送信する</button>
-          <p style="font-size:0.8rem;color:var(--color-text-light);">TODO: フォーム送信の実装（メール送信サービスやGoogleフォーム連携など）</p>
+          <div class="form-actions">
+            <button type="submit" class="button">送信する</button>
+          </div>
+          <p class="form-note">
+            TODO: フォーム送信の実装（メール送信サービスやGoogleフォーム連携など）。
+            現状は送信されません。
+          </p>
         </form>
       </div>
     </section>
   </main>
+
   <footer class="site-footer">
     <div class="container">
       <nav aria-label="フッターナビゲーション">
         <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="courses.html">Courses</a>
-      <a href="locations.html">Location</a>
-      <a href="tuition.html">Tuition & Timetable</a>
-      <a href="faq.html">FAQ</a>
-      <a href="news.html">News</a>
-      <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+        <a href="courses.html">Courses</a>
+        <a href="locations.html">Location</a>
+        <a href="tuition.html">Tuition & Timetable</a>
+        <a href="faq.html">FAQ</a>
+        <a href="news.html">News</a>
+        <a href="contact.html">Contact</a>
       </nav>
       <small>&copy; 2026 アースラボ. All Rights Reserved. / <a href="#">プライバシーポリシー</a></small>
-      <!-- TODO: Mojang社・Microsoft社とは無関係である旨の免責事項を記載（現行aslabpro.comを踏襲） -->
+      <small class="disclaimer">
+        <!-- TODO: 正式な文面を現行aslabpro.comに合わせて確定する -->
+        当スクールは Mojang Studios / Microsoft 社とは一切関係がありません。
+      </small>
     </div>
   </footer>
 
