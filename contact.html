@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>お問い合わせ｜アースラボ</title>
+  <meta name="description" content="アースラボへのお問い合わせ・無料体験のお申し込み。" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="site-logo">アースラボ</a>
+      <button class="nav-toggle" aria-label="メニューを開く" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="site-nav" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="locations.html">Location</a></li>
+        <li><a href="tuition.html">Tuition & Timetable</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+      <a href="contact.html" class="button button--sm header-cta">無料体験</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <h1 class="section-title">お問い合わせ</h1>
+        <p style="text-align:center;margin-bottom:32px;">TODO: 電話番号・受付時間を記載（例：TEL：000-0000-0000）</p>
+        <form style="max-width:560px;margin-inline:auto;display:grid;gap:16px;" onsubmit="return false;">
+          <label>
+            お名前
+            <input type="text" name="name" required style="width:100%;padding:12px;border:1px solid var(--color-border);border-radius:8px;margin-top:4px;" />
+          </label>
+          <label>
+            メールアドレス
+            <input type="email" name="email" required style="width:100%;padding:12px;border:1px solid var(--color-border);border-radius:8px;margin-top:4px;" />
+          </label>
+          <label>
+            お問い合わせ内容
+            <textarea name="message" rows="5" required style="width:100%;padding:12px;border:1px solid var(--color-border);border-radius:8px;margin-top:4px;"></textarea>
+          </label>
+          <button type="submit" class="button">送信する</button>
+          <p style="font-size:0.8rem;color:var(--color-text-light);">TODO: フォーム送信の実装（メール送信サービスやGoogleフォーム連携など）</p>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <nav aria-label="フッターナビゲーション">
+        <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="courses.html">Courses</a>
+      <a href="locations.html">Location</a>
+      <a href="tuition.html">Tuition & Timetable</a>
+      <a href="faq.html">FAQ</a>
+      <a href="news.html">News</a>
+      <a href="contact.html">Contact</a>
+      </nav>
+      <small>&copy; 2026 アースラボ. All Rights Reserved. / <a href="#">プライバシーポリシー</a></small>
+      <!-- TODO: Mojang社・Microsoft社とは無関係である旨の免責事項を記載（現行aslabpro.comを踏襲） -->
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="コース画像プレースホルダー">
+  <rect width="640" height="360" fill="#fdf3dd"/>
+  <g fill="#f6e3b6">
+    <rect x="40" y="0" width="40" height="40"/><rect x="120" y="0" width="40" height="40"/>
+    <rect x="0" y="40" width="40" height="40"/><rect x="520" y="0" width="40" height="40"/>
+    <rect x="560" y="40" width="40" height="40"/><rect x="40" y="320" width="40" height="40"/>
+    <rect x="120" y="280" width="40" height="40"/><rect x="560" y="320" width="40" height="40"/>
+    <rect x="520" y="280" width="40" height="40"/>
+  </g>
+  <g transform="translate(320 168)">
+    <rect x="-56" y="-56" width="48" height="48" fill="#ffb800"/>
+    <rect x="-4" y="-56" width="48" height="48" fill="#ffd45c"/>
+    <rect x="-56" y="-4" width="48" height="48" fill="#ffd45c"/>
+    <rect x="-4" y="-4" width="48" height="48" fill="#1e8f5e"/>
+  </g>
+  <text x="320" y="300" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#9a8149">COURSE IMAGE</text>
+</svg>
