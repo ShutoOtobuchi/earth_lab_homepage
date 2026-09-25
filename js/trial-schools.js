@@ -11,14 +11,17 @@
 //
 //   表示順はこの配列の順番どおりです（PCでは2列で、左上→右上→左下…の順）。
 //   校舎を追加・削除する場合は、行を足す／消すだけでOKです。
+//
+//   ※このファイルを更新したら、全HTMLの <script src="js/trial-schools.js?v=…"> の
+//     v= の値（例：日付）も変えてください。古いキャッシュが使われるのを防ぎます。
 // ==========================================================================
 window.TRIAL_SCHOOLS = [
   // ↓↓↓ '' の中に申込URLを入力してください ↓↓↓
-  { name: '金町校',   url: 'https://comiru.jp/aslabpro/customer/application/form' }, // TODO: 金町校の無料体験申込URL
-  { name: '新小岩校', url: 'https://comiru.jp/aslab-shinkoiwa/customer/application/form' }, // TODO: 新小岩校の無料体験申込URL
-  { name: '四街道校', url: 'https://comiru.jp/earth-academy_yotsukaido/customer/application/form' }, // TODO: 四街道校の無料体験申込URL
-  { name: '佐倉校',   url: 'https://comiru.jp/earth-academy_sakura/customer/application/form' }, // TODO: 佐倉校の無料体験申込URL
-  { name: '吹田校',   url: 'https://comiru.jp/reimeikobetsu/customer/application/form' }, // TODO: 吹田校の無料体験申込URL
-  { name: '豊中長興寺校',   url: '' }, // TODO: 豊中長興寺校の無料体験申込URL
+  { name: '金町校',   url: 'https://comiru.jp/aslabpro/customer/application/form' },
+  { name: '新小岩校', url: 'https://comiru.jp/aslab-shinkoiwa/customer/application/form' },
+  { name: '四街道校', url: 'https://comiru.jp/earth-academy_yotsukaido/customer/application/form' },
+  { name: '佐倉校',   url: 'https://comiru.jp/earth-academy_sakura/customer/application/form' },
+  { name: '吹田校',   url: 'https://comiru.jp/reimeikobetsu/customer/application/form' },
+  { name: '豊中長興寺校',   url: 'https://comiru.jp/earth-academy_toyonakachokoji/customer/application/form' },
   // ↑↑↑ '' の中に申込URLを入力してください ↑↑↑
 ];
