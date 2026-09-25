@@ -815,11 +815,6 @@ h1, h2, h3, h4 {
   font-size: clamp(1.6rem, 3.4vw, 2.4rem);
 }
 
-.page-hero__lead {
-  margin-top: 14px;
-  color: var(--color-text-light);
-}
-
 .breadcrumb {
   display: flex;
   flex-wrap: wrap;
