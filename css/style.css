@@ -146,6 +146,19 @@ h1, h2, h3, h4 {
   font-size: 1.25rem;
   color: var(--color-primary-dark);
   margin-right: auto;
+  flex-shrink: 0;
+}
+
+.site-logo img {
+  display: block;
+  width: auto;
+  height: 40px;
+}
+
+@media (max-width: 480px) {
+  .site-logo img {
+    height: 32px;
+  }
 }
 
 .site-nav {
@@ -723,6 +736,17 @@ h1, h2, h3, h4 {
   padding: 56px 0 28px;
   background: var(--color-bg-alt);
   border-top: 1px solid var(--color-border);
+}
+
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 24px;
+}
+
+.footer-logo img {
+  display: block;
+  width: auto;
+  height: 36px;
 }
 
 .site-footer nav {
