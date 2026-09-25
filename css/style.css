@@ -1289,10 +1289,11 @@ h1, h2, h3, h4 {
   border-top: 1px solid var(--color-border);
 }
 
-.map-embed img {
+.map-embed iframe {
+  display: block;
   width: 100%;
-  aspect-ratio: 32 / 6;
-  object-fit: cover;
+  height: 320px;
+  border: 0;
 }
 
 .info-list {
@@ -1316,9 +1317,8 @@ h1, h2, h3, h4 {
     padding: 24px;
   }
 
-  /* 幅が狭いと帯状の地図がつぶれるので高さを確保する */
-  .map-embed img {
-    aspect-ratio: 16 / 9;
+  .map-embed iframe {
+    height: 260px;
   }
 
   .info-list {
