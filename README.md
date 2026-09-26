@@ -21,7 +21,7 @@ earth_lab_homepage/
 ├── index.html          # トップページ
 ├── courses.html        # コース案内
 ├── locations.html      # 教室案内
-├── tuition.html        # 料金・時間割
+├── tuition.html        # 料金
 ├── faq.html            # よくある質問
 ├── news.html           # お知らせ一覧
 ├── contact.html        # お問い合わせ
@@ -42,7 +42,7 @@ earth_lab_homepage/
 ```
 
 ## ページ構成の方針（earth-academy.jp型）
-ナビゲーション: Home / About / Courses / Location / Tuition & Timetable / FAQ / News / Contact
+ナビゲーション: Home / Courses / Location / Tuition / FAQ / News / Contact
 
 各ページは共通のヘッダー（ロゴ＋ナビ＋ハンバーガーメニュー）とフッター（ナビ再掲・著作権・プライバシーポリシー）を持ちます。
 現時点ではプレーンHTMLのため、ヘッダー/フッターは各ページに直接記述しています（共通化する場合は将来的にビルドツール導入を検討）。
