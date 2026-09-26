@@ -4,6 +4,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   initNavToggle();
   initTrialModal();
+  initDetailModals();
 });
 
 // --- ハンバーガーメニュー ------------------------------------------------
@@ -70,6 +71,43 @@ function initTrialModal() {
 
   document.addEventListener('keydown', (event) => {
     if (event.key === 'Escape') close();
+  });
+}
+
+// --- 詳細モーダル（コース詳細など） --------------------------------------
+// data-modal-open="モーダルのid" を持つボタンを押すと、そのidのモーダルを表示する。
+// モーダル側は HTML に hidden 付きで記述し、閉じる要素に data-modal-close を付ける。
+function initDetailModals() {
+  document.querySelectorAll('[data-modal-open]').forEach((trigger) => {
+    const modal = document.getElementById(trigger.dataset.modalOpen);
+    if (!modal) return;
+
+    const open = () => {
+      modal.hidden = false;
+      modal.classList.add('is-open');
+      document.body.classList.add('is-modal-open');
+      modal.scrollTop = 0;
+      const closeButton = modal.querySelector('[data-modal-close]:not(.trial-modal__overlay)');
+      if (closeButton) closeButton.focus();
+    };
+
+    const close = () => {
+      if (modal.hidden) return;
+      modal.hidden = true;
+      modal.classList.remove('is-open');
+      document.body.classList.remove('is-modal-open');
+      trigger.focus();
+    };
+
+    trigger.addEventListener('click', open);
+
+    modal.querySelectorAll('[data-modal-close]').forEach((el) => {
+      el.addEventListener('click', close);
+    });
+
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape') close();
+    });
   });
 }
 

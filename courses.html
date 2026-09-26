@@ -67,6 +67,19 @@
               <p>Pythonコースでは、マインクラフトを使って、実際のプログラミング言語を学習します。個人差はありますが、1~2年ほどで修了となります。</p>
             </div>
           </div>
+          <div class="card card--clickable">
+            <img src="images/courses/placeholder-02.svg" alt="AIコースの学習画面" />
+            <div class="card-body">
+              <div class="tag-list">
+                <!-- TODO: AIコースの対象・回数を確定 -->
+                <span class="tag">小学生～高校生</span>
+                <span class="tag">年22回／年44回</span>
+              </div>
+              <h3>AIコース</h3>
+              <p>AIコースでは、マインクラフトの中で日本語でAIに指示を出しながらプログラミングを学びます。自分でコードを書く学習はそのままに、AIを使いこなす力をプラスします。</p>
+              <button type="button" class="card__more" data-modal-open="ai-course-modal" aria-haspopup="dialog">AIコースの詳細を見る</button>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -117,6 +130,8 @@
             <tbody>
               <tr><th>ブロックコーディングコース</th><td>小学1年生～中学生</td><td>主にマウスをつかってプログラミングの基礎を学びます</td><td>1~2年ほど（個人差あり）</td></tr>
               <tr><th>Pythonコース</th><td>ブロックコーディングコース修了生</td><td>マインクラフトを使って、実際のプログラミング言語を学習します</td><td>1~2年ほど（個人差あり）</td></tr>
+              <!-- TODO: AIコースの対象・修了の目安を確定 -->
+              <tr><th>AIコース</th><td>小学生～高校生</td><td>日本語でAIに指示を出しながら、Pythonでのプログラミングを学習します</td><td>要確認</td></tr>
             </tbody>
           </table>
         </div>
@@ -155,7 +170,83 @@
     </div>
   </footer>
 
-  <script src="js/trial-schools.js?v=20260925"></script>
-  <script src="js/main.js?v=20260925"></script>
+  <!-- AIコース詳細（AIコースのカードを押すと表示） -->
+  <div class="trial-modal course-modal" id="ai-course-modal" hidden>
+    <div class="trial-modal__overlay" data-modal-close></div>
+    <div class="trial-modal__panel" role="dialog" aria-modal="true" aria-labelledby="ai-course-modal-title">
+      <button type="button" class="trial-modal__close" data-modal-close aria-label="閉じる"></button>
+      <p class="trial-modal__en">AI Course</p>
+      <h2 class="trial-modal__title" id="ai-course-modal-title">AIコースについて</h2>
+      <div class="prose">
+        <p>AIコースでは、「自分でプログラムを書く」「AIに指示してプログラムを書いてもらう」「AIが書いたプログラムを読んで直す」の3つを組み合わせて学習します。使用する言語はPythonで、ブロック表示にも切り替えられるため、プログラミングが初めてのお子様も段階的に取り組めます。</p>
+        <p>AIに指示を出すだけでは先に進めない教材設計になっており、内容を理解しないと越えられない場面が用意されています。AIに頼りきりになるのではなく、AIへの指示を考えること自体が「考える力」のトレーニングになります。</p>
+      </div>
+
+      <h3 class="course-modal__heading">AIコースで身につく5つの力</h3>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <p class="feature-number">01</p>
+          <h3>頭の中を言葉にする力</h3>
+          <p>作りたいものを思いついても、頭の中のイメージはそのままでは相手に伝わりません。それを言葉に置き換える作業から、毎回の学習が始まります。</p>
+        </div>
+        <div class="feature-card">
+          <p class="feature-number">02</p>
+          <h3>具体的に伝える力</h3>
+          <p>AIへの指示は「かっこいい家」だけでは伝わりません。数や材料の名前、場所を入れないと伝わらないことが、使ううちに分かってきます。</p>
+        </div>
+        <div class="feature-card">
+          <p class="feature-number">03</p>
+          <h3>伝え忘れに気づく力</h3>
+          <p>AIからは「こう決めたよ」と、何を伝え忘れたのかが一覧で返ってきます。自分の考えを見直す練習になります。</p>
+        </div>
+        <div class="feature-card">
+          <p class="feature-number">04</p>
+          <h3>自分が書いていないものを読む力</h3>
+          <p>AIが書いたプログラムを読み、どこが何をしているのかを確かめます。</p>
+        </div>
+        <div class="feature-card">
+          <p class="feature-number">05</p>
+          <h3>うまくいかないときに、直す力</h3>
+          <p>思ったものと違うものが出てくるのは当たり前。一度で決まらないことが前提の学習なので、やり直しを失敗ではなく手順として受け止められるようになります。</p>
+        </div>
+      </div>
+
+      <h3 class="course-modal__heading">AIコースの授業の進め方</h3>
+      <ol class="step-list" role="list">
+        <li class="step-item">
+          <p class="step-item__num">01</p>
+          <div>
+            <h3>日本語でAIに指示を出す</h3>
+            <p>マインクラフトの世界で作りたいものを、日本語でAIに伝えます。</p>
+          </div>
+        </li>
+        <li class="step-item">
+          <p class="step-item__num">02</p>
+          <div>
+            <h3>AIがプログラムを作って実行</h3>
+            <p>AIが指示をもとにプログラムを作り、マインクラフトの中で実行します。結果は目の前ですぐに確認できます。</p>
+          </div>
+        </li>
+        <li class="step-item">
+          <p class="step-item__num">03</p>
+          <div>
+            <h3>足りなかった指示に気づく</h3>
+            <p>最初から思い通りになることはほとんどありません。AIが自分で決めた内容を確認し、どこが伝わっていなかったのかを見つけます。</p>
+          </div>
+        </li>
+        <li class="step-item">
+          <p class="step-item__num">04</p>
+          <div>
+            <h3>指示を言い直して、もう一度</h3>
+            <p>より具体的な指示に直して再挑戦します。このくり返しの中で、「伝える→確かめる→直す」力が自然と身につきます。</p>
+          </div>
+        </li>
+      </ol>
+      <p class="note"><strong>AIと手作業の使い分けも学びます</strong>同じ形をたくさん並べる・大きな建物を作るといった作業はAIが得意ですが、1か所だけの修正や細かな調整は自分で直したほうが早いこともあります。場面に応じて使い分ける感覚も身につけます。</p>
+    </div>
+  </div>
+
+  <script src="js/trial-schools.js?v=20260926"></script>
+  <script src="js/main.js?v=20260926"></script>
 </body>
 </html>
