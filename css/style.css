@@ -471,61 +471,6 @@ h1, h2, h3, h4 {
   }
 }
 
-/* --- 教育方針 ------------------------------------------------------------ */
-.policy-message {
-  max-width: 720px;
-  margin: 0 auto 48px;
-  text-align: center;
-  font-size: clamp(1.05rem, 2vw, 1.3rem);
-  font-weight: 700;
-  line-height: 1.9;
-}
-
-.policy-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-}
-
-.policy-item {
-  background: #fff;
-  border-radius: var(--radius);
-  padding: 28px 20px;
-  border: 1px solid var(--color-border);
-}
-
-/* ブロック名で修飾しているのは、`.policy-item p` に確実に勝たせるため */
-.policy-item .policy-item__label {
-  font-family: var(--font-en);
-  font-size: 0.72rem;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: var(--color-primary);
-  margin-bottom: 8px;
-}
-
-.policy-item h3 {
-  font-size: 1.15rem;
-  margin-bottom: 10px;
-}
-
-.policy-item p {
-  font-size: 0.88rem;
-  color: var(--color-text-light);
-}
-
-@media (max-width: 860px) {
-  .policy-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 480px) {
-  .policy-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
 /* --- Cards / Locations / Courses ---------------------------------------- */
 .card-grid {
   display: grid;

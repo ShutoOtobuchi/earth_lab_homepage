@@ -19,7 +19,6 @@
 ```
 earth_lab_homepage/
 ├── index.html          # トップページ
-├── about.html          # スクール紹介・理念
 ├── courses.html        # コース案内
 ├── locations.html      # 教室案内
 ├── tuition.html        # 料金・時間割
@@ -35,7 +34,6 @@ earth_lab_homepage/
 │   ├── logo/
 │   ├── hero/           # hero-illustration.svg（仮）
 │   ├── icons/
-│   ├── about/          # 写真・人物のプレースホルダー
 │   ├── courses/        # コース画像のプレースホルダー
 │   ├── locations/      # 教室写真・地図のプレースホルダー
 │   └── news/
