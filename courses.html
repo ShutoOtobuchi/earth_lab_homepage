@@ -45,7 +45,7 @@
     <section class="section">
       <div class="container">
         <div class="card-grid">
-          <div class="card">
+          <div class="card card--clickable">
             <img src="images/courses/courses_block.png" alt="ブロックコーディングの学習画面" />
             <div class="card-body">
               <div class="tag-list">
@@ -54,9 +54,10 @@
               </div>
               <h3>ブロックコーディングコース</h3>
               <p>ブロックコーディングコースでは、主にマウスをつかってプログラミングの基礎を学びます。小学1年生から受講可能です。個人差はありますが、1~2年ほどで修了となります。</p>
+              <button type="button" class="card__more" data-modal-open="block-course-modal" aria-haspopup="dialog">ブロックコーディングの詳細を見る</button>
             </div>
           </div>
-          <div class="card">
+          <div class="card card--clickable">
             <img src="images/courses/courses_python.png" alt="Pythonの学習画面" />
             <div class="card-body">
               <div class="tag-list">
@@ -65,6 +66,7 @@
               </div>
               <h3>Pythonコース</h3>
               <p>Pythonコースでは、マインクラフトを使って、実際のプログラミング言語を学習します。個人差はありますが、1~2年ほどで修了となります。</p>
+              <button type="button" class="card__more" data-modal-open="python-course-modal" aria-haspopup="dialog">Pythonコースの詳細を見る</button>
             </div>
           </div>
           <div class="card card--clickable">
@@ -169,6 +171,76 @@
       </small>
     </div>
   </footer>
+
+  <!-- ブロックコーディングコース詳細（ブロックコーディングコースのカードを押すと表示） -->
+  <div class="trial-modal course-modal" id="block-course-modal" hidden>
+    <div class="trial-modal__overlay" data-modal-close></div>
+    <div class="trial-modal__panel" role="dialog" aria-modal="true" aria-labelledby="block-course-modal-title">
+      <button type="button" class="trial-modal__close" data-modal-close aria-label="閉じる"></button>
+      <p class="trial-modal__en">Block Coding Course</p>
+      <h2 class="trial-modal__title" id="block-course-modal-title">ブロックコーディングコースについて</h2>
+      <div class="prose">
+        <p>ブロックコーディングコースでは、主にマウスをつかってプログラミングの基礎を学びます。小学1年生から受講可能です。個人差はありますが、1~2年ほどで修了となります。</p>
+      </div>
+
+      <h3 class="course-modal__heading">ブロックコーディングコースの特長</h3>
+      <div class="course-point">
+        <h4 class="course-point__title"><span class="course-point__num">1</span>マインクラフトを使ったカリキュラム</h4>
+        <p>マイクラの世界でゲーム感覚のミッションに挑戦することで、プログラミングを学習することができます。使用する教材は本格的なストーリー設定があり、<span class="marker">楽しみながら学習を進める</span>ことができます。ゲームを通じて、自然に論理的思考力や問題解決能力が身に付きます。</p>
+        <figure class="course-point__figure">
+          <img src="images/courses/courses_block.png" alt="マインクラフトでブロックを組み合わせてプログラミングしている画面" width="1040" height="554" loading="lazy" />
+          <figcaption><strong>実際のプログラミング学習の画面</strong>「マインクラフト」を使ったカリキュラムで楽しく学べます</figcaption>
+        </figure>
+      </div>
+      <div class="course-point">
+        <h4 class="course-point__title"><span class="course-point__num">2</span>みっちり学べる少人数制</h4>
+        <p>アースラボでは<span class="marker">少人数制</span>でプログラミングを指導します。集団授業のようにお休みによって授業に遅れをとる心配がありません。また、自分のペースに合わせて学習することができるので、理解が難しかった単元は<span class="marker">何度でもわかるまで</span>指導します。</p>
+      </div>
+      <div class="course-point">
+        <h4 class="course-point__title"><span class="course-point__num">3</span>理解を深める復習テスト</h4>
+        <p>アースラボでは、「楽しかった」だけで終わらず、学んだ内容が身についているかをテストで確認します。<span class="marker">ペーパーテスト</span>により理解度を測定し、不足があれば再度指導します。復習テストを通じて、確実に基礎力を固め、次のステップへ進む準備を整えます。</p>
+        <figure class="course-point__figure course-point__figure--narrow">
+          <img src="images/courses/paper_test.png" alt="マインクラフトの画面とブロックのプログラムを見て、正しいものを選ぶペーパーテストの問題" width="398" height="400" loading="lazy" />
+          <figcaption><strong>ペーパーテスト</strong></figcaption>
+        </figure>
+      </div>
+      <div class="course-point">
+        <h4 class="course-point__title"><span class="course-point__num">4</span>テキストコーディングのPythonコースへ</h4>
+        <p>ブロックコーディングコース修了後、<span class="marker">Pythonコース</span>へステップアップします。Pythonは、多くのアプリやソフトウェア開発に使用されるプログラミング言語です。マインクラフトを使った学習により、ブロックコーディングから<span class="marker">スムーズに</span>Python学習へ移行できます。</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pythonコース詳細（Pythonコースのカードを押すと表示） -->
+  <div class="trial-modal course-modal" id="python-course-modal" hidden>
+    <div class="trial-modal__overlay" data-modal-close></div>
+    <div class="trial-modal__panel" role="dialog" aria-modal="true" aria-labelledby="python-course-modal-title">
+      <button type="button" class="trial-modal__close" data-modal-close aria-label="閉じる"></button>
+      <p class="trial-modal__en">Python Course</p>
+      <h2 class="trial-modal__title" id="python-course-modal-title">Pythonコースについて</h2>
+      <div class="prose">
+        <p>ブロックコーディングコース修了後、テキストコーディングのPythonコースへステップアップします。Pythonは、多くのアプリやソフトウェア開発に使用されるプログラミング言語です。マインクラフトを使った学習により、ブロックコーディングからスムーズにPython学習へ移行できます。個人差はありますが、1~2年ほどで修了となります。</p>
+      </div>
+
+      <h3 class="course-modal__heading">Pythonコースの特長</h3>
+      <div class="course-point">
+        <h4 class="course-point__title"><span class="course-point__num">1</span>マインクラフトを使ったカリキュラム</h4>
+        <p>マイクラの世界でゲーム感覚のミッションに挑戦することで、プログラミングを学習することができます。使用する教材は本格的なストーリー設定があり、<span class="marker">楽しみながら学習を進める</span>ことができます。ゲームを通じて、自然に論理的思考力や問題解決能力が身に付きます。</p>
+        <figure class="course-point__figure">
+          <img src="images/courses/courses_python.png" alt="マインクラフトでPythonのプログラムを書いている画面" width="1038" height="554" loading="lazy" />
+          <figcaption><strong>実際のプログラミング学習の画面</strong>「マインクラフト」を使ったカリキュラムで楽しく学べます</figcaption>
+        </figure>
+      </div>
+      <div class="course-point">
+        <h4 class="course-point__title"><span class="course-point__num">2</span>みっちり学べる少人数制</h4>
+        <p>アースラボでは<span class="marker">少人数制</span>でプログラミングを指導します。集団授業のようにお休みによって授業に遅れをとる心配がありません。また、自分のペースに合わせて学習することができるので、理解が難しかった単元は<span class="marker">何度でもわかるまで</span>指導します。</p>
+      </div>
+      <div class="course-point">
+        <h4 class="course-point__title"><span class="course-point__num">3</span>理解を深める復習テスト</h4>
+        <p>アースラボでは、「楽しかった」だけで終わらず、学んだ内容が身についているかをテストで確認します。<span class="marker">ペーパーテスト</span>により理解度を測定し、不足があれば再度指導します。復習テストを通じて、確実に基礎力を固め、次のステップへ進む準備を整えます。</p>
+      </div>
+    </div>
+  </div>
 
   <!-- AIコース詳細（AIコースのカードを押すと表示） -->
   <div class="trial-modal course-modal" id="ai-course-modal" hidden>
