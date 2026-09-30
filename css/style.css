@@ -1759,3 +1759,33 @@ body.is-modal-open {
 .link-inline:hover {
   color: var(--color-primary);
 }
+
+/* プライバシーポリシー */
+.policy h3:first-of-type {
+  margin-top: 2.4em;
+}
+
+.policy h3 {
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--color-primary-tint);
+}
+
+.policy p,
+.policy li {
+  font-size: 0.95rem;
+  line-height: 1.9;
+}
+
+.policy .info-list,
+.policy-list {
+  margin-top: 1em;
+}
+
+.policy-list {
+  padding-left: 1.6em;
+  list-style: decimal;
+}
+
+.policy-list li + li {
+  margin-top: 0.4em;
+}
